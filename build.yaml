@@ -21,5 +21,7 @@
 include:
   - board: nrfmicro_13
     shield: lily58_left
+    config: config/left.conf
   - board: nrfmicro_13
     shield: lily58_right
+    config: config/right.conf
