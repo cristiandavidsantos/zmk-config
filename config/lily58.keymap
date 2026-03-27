@@ -4,9 +4,9 @@
 #include <dt-bindings/zmk/ext_power.h>
 //Sensor para los EC11
 &sensors {
-            left_config {
-               triggers-per-rotation = <18>;
-            };
+//           left_config {
+//               triggers-per-rotation = <18>;
+//            };
             right_config {
                 triggers-per-rotation = <18>;
             };
@@ -22,7 +22,7 @@
                 &kp Y    &kp U    &kp I    &kp O    &kp P    &kp MINUS
                 &kp H    &kp J    &kp K    &kp L    &kp SEMI &kp SQT
                 &kp N    &kp M    &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
-                &kp SPACE &mo 1 &kp BSPC &kp RET
+                &kp LSFT &kp LGUI &kp LCTRL &kp LALT
             >;
        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };    

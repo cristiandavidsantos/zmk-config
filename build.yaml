@@ -20,10 +20,11 @@
 #- board: nrfmicro_13
 #    shield: lily58_left
 #    config: config/left.conf
-#
+#shield: lily58_right
+    #config: config/right.conf
 ---
 include:
   
   - board: nrfmicro_13
-    shield: lily58_right
-    config: config/right.conf
+    
+    shield: settings_reset
