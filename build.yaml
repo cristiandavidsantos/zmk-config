@@ -16,12 +16,14 @@
 #     snippet: studio-rpc-usb-uart
 #     cmake-args: -DCONFIG_ZMK_STUDIO=y
 #     artifact-name: corne_left_with_studio
+# esta parte es la izquierda
+#- board: nrfmicro_13
+#    shield: lily58_left
+#    config: config/left.conf
 #
 ---
 include:
-  - board: nrfmicro_13
-    shield: lily58_left
-    config: config/left.conf
+  
   - board: nrfmicro_13
     shield: lily58_right
     config: config/right.conf
