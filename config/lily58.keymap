@@ -14,9 +14,8 @@
         };
 / {
     keymap {
-        compatible = "zmk,keymap";
+        compatible = "zmk,keymap,wired-split";
         wired_split {
-            compatible = "zmk,wired-split";
             device = <&pro_micro_serial>;
         };
         
