@@ -14,11 +14,7 @@
         };
 / {
     keymap {
-        compatible = "zmk,keymap,wired-split";
-        wired_split {
-            device = <&pro_micro_serial>;
-        };
-        
+        compatible = "zmk,keymap";        
         default_layer {
             display-name = "Base";
 // ------------------------------------------------------------------------------------------------------------
