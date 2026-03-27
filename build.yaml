@@ -24,8 +24,6 @@
     #config: config/right.conf
 ---
 include:
-  
-  - board: nrfmicro_13
+  - board: nice_nano_v2
     shield: lily58_right
     config: config/right.conf
-    shield: settings_reset
