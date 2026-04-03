@@ -1,33 +1,21 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-
-/* Solo encoder derecha */
-&sensors {
-    right_config {
-        triggers-per-rotation = <18>;
-    };
-};
+#include <dt-bindings/zmk/ext_power.h>
 
 / {
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
-            display-name = "Test";
+            display-name = "Base";
 
             bindings = <
-                /* Fila superior (6 teclas) */
-                &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp GRAVE
-                /* Segunda fila */
-                &kp Y  &kp U  &kp I  &kp O  &kp P  &kp MINUS
-                /* Tercera fila */
-                &kp H  &kp J  &kp K  &kp L  &kp SEMI &kp SQT
-                /* Cuarta fila + shift derecho */
-                &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-
-                /* Thumb cluster derecha - prueba estas 4 posiciones */
-                &kp SPACE &kp LALT &kp BSPC &kp RET
+                &kp N6      &kp N7      &kp N8      &kp N9      &kp N0          &kp GRAVE
+                &kp Y       &kp U       &kp I       &kp O       &kp P           &kp MINUS
+                &kp H       &kp J       &kp K       &kp L       kp SEMI         &kp SQT
+                &kp N       &kp M       kp COMMA    &kp DOT     &kp FSLH        &kp RSHFT
+                &kp SPACE   &kp LALT    &kp BSPC    &kp RET
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
