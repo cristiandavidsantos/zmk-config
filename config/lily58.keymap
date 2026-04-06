@@ -3,7 +3,13 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 / {
-    
+    behaviors {
+        rot_kp: sensor_rotate_kp {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            #sensor-binding-cells = <2>;
+            sensor-bindings = <&kp>, <&kp>;
+        };
+    };
     keymap {
         compatible = "zmk,keymap";
         default_layer {
@@ -15,7 +21,7 @@
 //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
             display-name = "Base";
             bindings = <
-&kp BSCP  &kp N0    &kp N9    &kp N8    &kp N7    &kp N6                       &kp N6 &kp N7   &kp N8    &kp N9  &kp N0   &kp GRAVE
+&kp BSPC  &kp N0    &kp N9    &kp N8    &kp N7    &kp N6                       &kp N6 &kp N7   &kp N8    &kp N9  &kp N0   &kp GRAVE
 &kp BSLH  &kp P     &kp O     &kp I     &kp U     &kp Y                        &kp Y  &kp U    &kp I     &kp O   &kp P    &kp MINUS
 &kp ENTER &kp SEMI  &kp L     &kp K     &kp J     &kp H                        &kp H  &kp J    &kp K     &kp L   &kp SEMI &kp SQT
 &kp RSHFT &kp FSLH  &kp DOT   &kp COMMA &kp M     &kp N     &to 1     &kp RBKT &kp N  &kp M    &kp COMMA &kp DOT &kp FSLH &kp RSHFT
