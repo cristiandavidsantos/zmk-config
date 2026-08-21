@@ -8,10 +8,3 @@ include:
   - board: nice_nano_v2
     shield: Lily58_R nice_oled
     artifact-name: Lily58_right_oled
-  # peripheral with oled display(with nice_oled module)
-  - board: nice_nano_v2
-    shield: Lily58_dongle_left nice_oled
-    artifact-name: Lily58_peripheral_left_oled
-  - board: nice_nano_v2
-    shield: Lily58_dongle_right nice_oled
-    artifact-name: Lily58_peripheral_right_oled   
