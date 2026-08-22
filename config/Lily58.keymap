@@ -12,13 +12,6 @@
 
 / {
     // Activate ADJUST layer by pressing raise and lower
-    behaviors {
-        rot_kp: sensor_rotate_kp {
-            compatible = "zmk,behavior-sensor-rotate-var";
-            #sensor-binding-cells = <2>;
-            bindings = <&to>;
-        };
-    };
     //conditional_layers {
         //compatible = "zmk,conditional-layers";
 
