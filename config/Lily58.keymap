@@ -32,7 +32,7 @@
         compatible = "zmk,keymap";
         display-name= "|1.|";
         default_layer {
-// ------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------
 // |  ESC  |  1  |  2  |  3   |  4   |  5   |                   |  6  |  7  |  8   |  9   |   0   | DEL   |
 // |  TAB  |  Q  |  W  |  E   |  R   |  T   |                   |  Y  |  U  |  I   |  O   |   P   | BSPC  |
 // |  CAPS |  A  |  S  |  D   |  F   |  G   |                   |  H  |  J  |  K   |  L   |   ;   |   \   |
@@ -46,7 +46,7 @@
                                &kp LCTRL &kp LALT &kp LGUI  &kp SPACE       &kp RET    &kp RALT  &kp MINUS   &kp EQUAL
             >;
 
-            sensor-bindings = <&rot_kp &to 2 &to 1 &inc_dec_kp C_PREV C_NEXT >;
+            sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_PREV C_NEXT >;
         };
 
         lower_layer {
@@ -65,7 +65,7 @@
                               &kp LCTRL &kp LALT  &kp LGUI   &kp SPACE &kp RET    &kp RALT  &kp RCTRL &kp DEL
             >;
 
-            sensor-bindings = <&rot_kp &to 0 &to 2 &inc_dec_kp C_VOL_DN C_VOL_UP >;
+            sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_DN C_VOL_UP >;
         };
         display-name= "|3.|";
         adjust_layer {
@@ -83,7 +83,7 @@
                                &kp LCTRL &kp RALT    &kp LGUI  &kp RET   &trans   &trans    &trans    &trans
             >;
 
-            sensor-bindings = <&rot_kp &to 1 &to 0 &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
         extra1 { status = "reserved"; };
