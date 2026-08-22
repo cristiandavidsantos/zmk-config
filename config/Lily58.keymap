@@ -12,15 +12,21 @@
 
 / {
     // Activate ADJUST layer by pressing raise and lower
-
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        adjust_layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
+    behaviors {
+        rot_kp: sensor_rotate_kp {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            #sensor-binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
         };
     };
+    //conditional_layers {
+        //compatible = "zmk,conditional-layers";
+
+        //adjust_layer {
+            //if-layers = <1 2>;
+           // then-layer = <3>;
+        //};
+    //};
 
     keymap {
         compatible = "zmk,keymap";
