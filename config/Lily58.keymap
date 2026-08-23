@@ -37,8 +37,8 @@
 &kp LSHFT  &kp Z     &kp X     &kp C     &kp V    &kp B     &to 1     &rgb_ug RGB_TOG &kp N     &kp M       &kp COMMA  &kp DOT    &kp FSLH    &kp RSHFT
                                &kp LCTRL &kp LALT &kp LGUI  &kp SPACE &kp RET         &kp RALT  &kp MINUS   &kp EQUAL
             >;
-
-            sensor-bindings = <&rgb_encoder &inc_dec_kp C_NEXT C_PREV>;
+ // &inc_dec_kp C_NEXT C_PREV
+            sensor-bindings = <&rgb_encoder>;
         };
 
         lower_layer {
