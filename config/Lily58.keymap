@@ -11,13 +11,11 @@
 #include <dt-bindings/zmk/rgb.h>
 
 / {
-   / {
     behaviors {
-            rgb_encoder: rgb_encoder {
-                compatible = "zmk,behavior-sensor-rotate-key-press";
-                #sensor-binding-cells = <0>;
-                bindings = <&mo 1>, <&mo 0>;
-            };
+        rgb_encoder: rgb_encoder {
+            compatible = "zmk,behavior-sensor-rotate-key-press";
+            #sensor-binding-cells = <0>;
+            bindings = <&mo 1>, <&mo 0>;
         };
     };
 
