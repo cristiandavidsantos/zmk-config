@@ -13,9 +13,9 @@
 / {
     behaviors {
         rgb_encoder: rgb_encoder {
-            compatible = "zmk,behavior-sensor-rotate-key-press";
+            compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&mo 1>, <&mo 0>;
+            bindings = <&to 1>, <&to 0>;
         };
     };
 
@@ -38,7 +38,7 @@
                                &kp LCTRL &kp LALT &kp LGUI  &kp SPACE &kp RET         &kp RALT  &kp MINUS   &kp EQUAL
             >;
  // &inc_dec_kp C_NEXT C_PREV
-            sensor-bindings = <&rgb_encoder>;
+            sensor-bindings = <&rgb_encoder &inc_dec_kp C_NEXT C_PREV>;
         };
 
         lower_layer {
