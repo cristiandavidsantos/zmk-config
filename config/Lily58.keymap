@@ -14,18 +14,18 @@
     behaviors {
         
         rgb_encoder: rgb_encoder {  
-            compatible = "zmk,behavior-sensor-rotate";         
-            #sensor-binding-cells = <1>;
+            compatible = "zmk,behavior-sensor-rotate-var";         
+            #sensor-binding-cells = <2>;
             bindings = <&to 1>, <&to 0>;
         };
         encoder_2: encoder_2 {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <1>;
+            compatible = "zmk,behavior-sensor-rotate-var";
+            #sensor-binding-cells = <2>;
             bindings = <&to 2>, <&to 1>;
         };
         gatillo_3: gatillo_3 {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <1>;
+            compatible = "zmk,behavior-sensor-rotate-var";
+            #sensor-binding-cells = <2>;
             bindings = <&to 0>, <&to 2>;
         };
     };
