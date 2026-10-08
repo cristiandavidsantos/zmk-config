@@ -64,7 +64,7 @@
 &kp F1     &kp F2    &kp F3   &kp F4    &kp F5    &kp F6                                &kp F7    &kp F8    &kp F9   &kp F10   &kp F11         &kp F12
 &kp TAB    &kp GRAVE &kp EXCL &kp AT    &kp HASH  &kp DOLLAR                            &kp PRCNT &kp CARET &kp AMPS &kp ASTRK &rgb_ug RGB_TOG &kp BSPC
 &kp CAPS   &kp LBKT  &kp RBKT &kp LT    &kp GT    &trans                                &kp DQT   &kp SQT   &none    &none     &kp UP          &trans
-&kp LSHFT  &kp LPAR  &kp RPAR &kp FSLH  &kp BSLH  &trans     &to 0     &rgb_ug RGB_TOG  &kp TILDE &none     &non~e    &kp LEFT  &kp DOWN        &kp RIGHT
+&kp LSHFT  &kp LPAR  &kp RPAR &kp FSLH  &kp BSLH  &trans     &to 0     &rgb_ug RGB_TOG  &kp TILDE &none     &none    &kp LEFT  &kp DOWN        &kp RIGHT
                               &kp LCTRL &kp LALT  &kp LGUI   &kp SPACE &kp RET &kp RALT &kp RCTRL &kp DEL
             >;
 
